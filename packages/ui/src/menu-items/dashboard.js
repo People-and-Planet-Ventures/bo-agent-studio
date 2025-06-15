@@ -294,7 +294,7 @@ const dashboard = {
             children: [
                 {
                     id: 'ai-buddy',
-                    title: 'Bright Owl AI Buddy',
+                    title: 'Bright Owl Education',
                     type: 'item',
                     url: 'https://brightowl.pandpventures.com/',
                     icon: icons.IconRobot,
