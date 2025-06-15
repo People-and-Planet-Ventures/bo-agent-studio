@@ -79,13 +79,13 @@ const Sidebar = ({ drawerOpen, drawerToggle, window }) => {
                     sx={{
                         '& .MuiDrawer-paper': {
                             width: drawerWidth,
-                            background: theme.palette.background.default,
-                            color: theme.palette.text.primary,
+                            background: theme.colors?.sidebarBackground,
+                            color: theme.colors?.sidebarText,
                             [theme.breakpoints.up('md')]: {
                                 top: `${headerHeight}px`
                             },
                             borderRight: drawerOpen ? '1px solid' : 'none',
-                            borderColor: drawerOpen ? theme.palette.grey[900] + 25 : 'transparent'
+                            borderColor: 'transparent'
                         }
                     }}
                     ModalProps={{ keepMounted: true }}

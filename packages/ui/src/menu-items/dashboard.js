@@ -286,6 +286,33 @@ const dashboard = {
                     display: 'feat:account'
                 }
             ]
+        },
+        {
+            id: 'bottom-items',
+            title: 'Bright Owl',
+            type: 'group',
+            children: [
+                {
+                    id: 'ai-buddy',
+                    title: 'Bright Owl AI Buddy',
+                    type: 'item',
+                    url: 'https://brightowl.pandpventures.com/',
+                    icon: icons.IconRobot,
+                    breadcrumbs: true,
+                    external: true,
+                    target: '_blank'
+                },
+                {
+                    id: 'ai-observe',
+                    title: 'Bright Owl Observe',
+                    type: 'item',
+                    url: 'https://observe.pandpventures.com/',
+                    icon: icons.IconRobot,
+                    breadcrumbs: true,
+                    external: true,
+                    target: '_blank'
+                }
+            ]
         }
     ]
 }

@@ -65,7 +65,19 @@ const NavCollapse = ({ menu, level }) => {
                     alignItems: 'flex-start',
                     backgroundColor: level > 1 ? 'transparent !important' : 'inherit',
                     py: level > 1 ? 1 : 1.25,
-                    pl: `${level * 24}px`
+                    pl: `${level * 24}px`,
+                    '&.Mui-selected': {
+                        backgroundColor: theme.colors?.sidebarSelectedBackground,
+                        color: theme.colors?.sidebarSelectedText,
+                        '&:hover': {
+                            backgroundColor: theme.colors?.sidebarSelectedBackground,
+                            color: theme.colors?.sidebarSelectedText
+                        }
+                    },
+                    '&:hover': {
+                        backgroundColor: theme.colors?.sidebarSelectedBackground,
+                        color: theme.colors?.sidebarSelectedText
+                    }
                 }}
                 selected={selected === menu.id}
                 onClick={handleClick}
@@ -105,7 +117,7 @@ const NavCollapse = ({ menu, level }) => {
                             height: '100%',
                             width: '1px',
                             opacity: 1,
-                            background: theme.palette.primary.light
+                            background: theme.colors?.sidebarSelectedBackground
                         }
                     }}
                 >

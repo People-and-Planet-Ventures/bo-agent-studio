@@ -104,7 +104,19 @@ const NavItem = ({ item, level, navType, onClick, onUploadFile }) => {
                 alignItems: 'flex-start',
                 backgroundColor: level > 1 ? 'transparent !important' : 'inherit',
                 py: level > 1 ? 1 : 1.25,
-                pl: `${level * 24}px`
+                pl: `${level * 24}px`,
+                '&.Mui-selected': {
+                    backgroundColor: theme.colors?.sidebarSelectedBackground,
+                    color: theme.colors?.sidebarSelectedText,
+                    '&:hover': {
+                        backgroundColor: theme.colors?.sidebarSelectedBackground,
+                        color: theme.colors?.sidebarSelectedText
+                    }
+                },
+                '&:hover': {
+                    backgroundColor: theme.colors?.sidebarSelectedBackground,
+                    color: theme.colors?.sidebarSelectedText
+                }
             }}
             selected={customization.isOpen.findIndex((id) => id === item.id) > -1}
             onClick={() => itemHandler(item.id)}

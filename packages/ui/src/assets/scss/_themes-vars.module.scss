@@ -2,18 +2,18 @@
 $paper: #ffffff;
 
 // primary
-$primaryLight: #e3f2fd;
-$primaryMain: #2196f3;
-$primaryDark: #1e88e5;
-$primary200: #90caf9;
-$primary800: #1565c0;
+$primaryLight: #e8eaf6;
+$primaryMain: #1a237e;
+$primaryDark: #0d1642;
+$primary200: #9fa8da;
+$primary800: #283593;
 
 // secondary
-$secondaryLight: #ede7f6;
-$secondaryMain: #673ab7;
-$secondaryDark: #5e35b1;
-$secondary200: #b39ddb;
-$secondary800: #4527a0;
+$secondaryLight: #e3f2fd;
+$secondaryMain: #0d47a1;
+$secondaryDark: #002171;
+$secondary200: #90caf9;
+$secondary800: #1565c0;
 
 // success Colors
 $successLight: #cdf5d8;
@@ -54,6 +54,12 @@ $grey900: #212121;
 
 // transparent
 $transparent: #ffffff00;
+
+// Sidebar custom colors
+$sidebarBackground: #212934;
+$sidebarText: #ffffff;
+$sidebarSelectedBackground: #3f4c5a;
+$sidebarSelectedText: #ffffff;
 
 // ==============================|| DARK THEME VARIANTS ||============================== //
 
@@ -172,4 +178,10 @@ $darkTextSecondary: #8492c4;
 
     // transparent
     transparent: $transparent;
+
+    // Sidebar custom colors
+    sidebarBackground: $sidebarBackground;
+    sidebarText: $sidebarText;
+    sidebarSelectedBackground: $sidebarSelectedBackground;
+    sidebarSelectedText: $sidebarSelectedText;
 }
