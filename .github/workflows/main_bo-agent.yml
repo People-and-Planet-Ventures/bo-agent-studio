@@ -31,7 +31,7 @@ jobs:
 
       - name: Build and test
         run: |
-          export NODE_OPTIONS="--max-old-space-size=8192"
+          export NODE_OPTIONS="--max-old-space-size=1228"
           pnpm run build
           pnpm run test
 
