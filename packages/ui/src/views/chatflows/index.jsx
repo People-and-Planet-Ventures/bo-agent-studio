@@ -155,7 +155,6 @@ const Chatflows = () => {
                             permissionId={'chatflows:create'}
                             variant='contained'
                             onClick={addNew}
-                            startIcon={<IconPlus />}
                             sx={{ borderRadius: 2, height: 40 }}
                         >
                             Add New
