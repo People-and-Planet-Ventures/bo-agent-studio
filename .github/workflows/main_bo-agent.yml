@@ -31,8 +31,8 @@ jobs:
 
       - name: Build and test
         run: |
-          pnpm run build --if-present
-          pnpm run test --if-present
+          pnpm run build
+          pnpm run test
 
       #- name: npm install, build, and test
         #run: |
