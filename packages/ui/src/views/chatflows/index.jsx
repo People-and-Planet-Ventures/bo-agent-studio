@@ -136,7 +136,6 @@ const Chatflows = () => {
                                 value='card'
                                 title='Card View'
                             >
-                                <IconLayoutGrid />
                             </ToggleButton>
                             <ToggleButton
                                 sx={{
@@ -148,14 +147,12 @@ const Chatflows = () => {
                                 value='list'
                                 title='List View'
                             >
-                                <IconList />
                             </ToggleButton>
                         </ToggleButtonGroup>
                         <StyledPermissionButton
                             permissionId={'chatflows:create'}
                             variant='contained'
                             onClick={addNew}
-                            startIcon={<IconPlus />}
                             sx={{ borderRadius: 2, height: 40 }}
                         >
                             Add New

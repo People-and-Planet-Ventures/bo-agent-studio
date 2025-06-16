@@ -262,9 +262,8 @@ const Header = ({ handleLeftDrawerToggle }) => {
                             alignItems: 'center'
                         }
                     }}
-                />
-
-                </Box>
+                >
+               </Box>
             ) : (
                 <Box sx={{ flexGrow: 1 }} />
             )}
