@@ -27,7 +27,7 @@ import { baseURL } from '@/store/constant'
 import { useError } from '@/store/context/ErrorContext'
 
 // icons
-import { IconPlus, IconLayoutGrid, IconList } from '@tabler/icons-react'
+//import { IconPlus, IconLayoutGrid, IconList } from '@tabler/icons-react'
 
 // ==============================|| CHATFLOWS ||============================== //
 
@@ -155,6 +155,7 @@ const Chatflows = () => {
                             permissionId={'chatflows:create'}
                             variant='contained'
                             onClick={addNew}
+                            startIcon={<IconPlus />}
                             sx={{ borderRadius: 2, height: 40 }}
                         >
                             Add New

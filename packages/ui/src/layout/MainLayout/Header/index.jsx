@@ -155,7 +155,7 @@ const Header = ({ handleLeftDrawerToggle }) => {
     const currentUser = useSelector((state) => state.auth.user)
     const isAuthenticated = useSelector((state) => state.auth.isAuthenticated)
     const [isPricingOpen, setIsPricingOpen] = useState(false)
-    const [starCount, setStarCount] = useState(0)
+
 
     useNotifier()
 
@@ -262,7 +262,7 @@ const Header = ({ handleLeftDrawerToggle }) => {
                             alignItems: 'center'
                         }
                     }}
-                >
+                />
 
                 </Box>
             ) : (

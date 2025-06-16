@@ -30,7 +30,7 @@ jobs:
                   cache: 'pnpm'
                   cache-dependency-path: 'pnpm-lock.yaml'
             - run: pnpm install --no-frozen-lockfile
-            - run: pnpm lint
+            - run: pnpm lint --fix
             - run: pnpm build
               env:
                   NODE_OPTIONS: '--max_old_space_size=4096'
