@@ -34,7 +34,7 @@ jobs:
             - run: pnpm lint --fix
             - run: pnpm build
               env:
-                  NODE_OPTIONS: '--max_old_space_size=1228'
+                  NODE_OPTIONS: '--max_old_space_size=24576'
             - name: Cypress install
               run: pnpm cypress install
             - name: Install dependencies (Cypress Action)
