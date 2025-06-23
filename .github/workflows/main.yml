@@ -14,7 +14,7 @@ jobs:
         strategy:
             matrix:
                 platform: [ubuntu-latest]
-                node-version: [18.15.0]
+                node-version: [22.x]
         runs-on: ${{ matrix.platform }}
         #runs-on: self-hosted
         env:
@@ -34,7 +34,7 @@ jobs:
             - run: pnpm lint --fix
             - run: pnpm build
               env:
-                  NODE_OPTIONS: '--max_old_space_size=24576'
+                  NODE_OPTIONS: '--max_old_space_size=49152'
             - name: Cypress install
               run: pnpm cypress install
             - name: Install dependencies (Cypress Action)
