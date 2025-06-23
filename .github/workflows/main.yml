@@ -15,8 +15,8 @@ jobs:
             matrix:
                 platform: [ubuntu-latest]
                 node-version: [18.15.0]
-        #runs-on: ${{ matrix.platform }}
-        runs-on: self-hosted
+        runs-on: ${{ matrix.platform }}
+        #runs-on: self-hosted
         env:
             PUPPETEER_SKIP_DOWNLOAD: true
         steps:
